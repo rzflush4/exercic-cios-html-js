@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8"
+        <title>Somador de números</title>
+    </head>
+    <style>
+        body {
+          text-align: center;
+        }
+
+        button{
+            margin-top: 50px;
+            padding: 10px;
+        }
+        h1{
+            font-size: 40px;
+        }
+    </style>
+    <body>
+           <input id="n1" type="number"style="margin-top: 50px;">
+           <h1>+</h1>
+           <input type="number">
+           <br>
+           <button id="Botao">Somar</button>
+           <p id="resultado"></p>
+
+           <script>
+            let botao = document.getElementById('botao')
+            botao.addEventListener('click', function(){
+            let n1 = parseInt(document.getElementById('n1').value)
+            let n2 = parsenInt(document.getElementById('n2').value)
+            let soma = n1 + n2 
+
+            document.getElementById('resultado').innerText = 'A soma é: ' + soma
+            })
+           </script>
+    </body>
+</html>
